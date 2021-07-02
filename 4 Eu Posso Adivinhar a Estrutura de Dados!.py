@@ -1,6 +1,6 @@
 # Rick Leal
 
-
+# massete (URI) do try except
 while True:
     try:
         x = int(input())
@@ -8,6 +8,7 @@ while True:
         break
 
     ts=0
+    # necessarias 3 listas - verificar tipo da estrutura
     s = []
     q = []
     pq = []
