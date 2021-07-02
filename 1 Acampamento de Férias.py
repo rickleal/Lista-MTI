@@ -1,3 +1,4 @@
+
 temp = []
 
 
@@ -8,6 +9,7 @@ while True:
       
     else:
         for n in range(0,c):
+            # pega a lista e a transforma numa nova lista com a operação str
             nome, num = map(str, input().split())
             num = int(num)
             temp.append([nome,num])
@@ -33,11 +35,9 @@ while True:
                     y = len(temp)-1
                 else:
                     y-=1
-                #print(y, i)
               
             eliminado = temp.pop(y)
             auy = y
-            #print(auy)
             inicio_ant = inicio
         else:
             if j==1:
@@ -51,18 +51,12 @@ while True:
                 x+=1
                 if x==len(temp):
                     x = 0
-                #print(x, i)
             
-            #aux = x-1  
             eliminado = temp.pop(x)
             aux = x-1
-            #print(aux)
             inicio_ant = inicio
             
-        #print(y)
         inicio = eliminado[1]
-        #print(eliminado)
-        #print(inicio_ant, inicio)
         
         
     print("Vencedor(a):",temp[0][0])
