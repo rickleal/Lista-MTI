@@ -12,7 +12,9 @@ def jos(k, j):
 
 n = int(input())
 for i in range(n):
+    #lista base de entrada
     k, j = input().split()
+    # lambda
     k = [x for x in range(1, int(k)+1)]
     j = int(j)
     result = jos(k, j)
